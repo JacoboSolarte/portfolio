@@ -1,1 +1,38 @@
 @import "tailwindcss";
+
+@theme {
+  --color-primary: hsl(220, 90%, 56%);
+  --color-primary-foreground: hsl(220, 100%, 95%);
+
+  --color-secondary: hsl(215, 25%, 27%);
+  --color-secondary-foreground: hsl(210, 50%, 85%);
+
+  --color-accent: hsl(210, 36%, 96%);
+  --color-accent-foreground: hsl(215, 35%, 20%);
+
+  --color-tertiary: hsl(240, 7%, 15%);
+  --color-tertiary-foreground: hsl(210, 50%, 85%);
+
+  --color-muted: hsl(220, 14%, 96%); 
+  --color-muted-foreground: hsl(220, 25%, 30%);
+
+  --color-neutral: hsl(225, 15%, 92%);
+  --color-neutral-foreground: hsl(220, 30%, 20%);
+
+  --color-background: hsl(0, 0%, 100%); 
+  --color-foreground: hsl(220, 20%, 10%);
+
+  --color-border: hsl(215, 20%, 88%);
+
+  --color-destructive: hsl(0, 84%, 50%);
+  --color-destructive-foreground: hsl(0, 0%, 20%);
+
+  --color-warning: hsl(36, 100%, 50%);
+  --color-warning-foreground: hsl(36, 30%, 20%);
+
+  --color-success: hsl(158, 64%, 45%);
+  --color-success-foreground: hsl(158, 30%, 15%);
+
+  --color-info: hsl(208, 100%, 52%);
+  --color-info-foreground: hsl(208, 40%, 15%);
+}
