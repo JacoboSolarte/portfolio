@@ -1,6 +1,7 @@
 import HeaderByAnima from "./components/Navbar"
 import  HeroByAnima   from "./components/Hero"
 import { AboutByAnima} from "./components/AboutMe"
+import {WorkByAnima } from "./components/Projects"
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
     <HeaderByAnima/>
     <HeroByAnima/>
     <AboutByAnima/>
+    <WorkByAnima/>
     </>
   );
 }
