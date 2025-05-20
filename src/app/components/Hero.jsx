@@ -27,8 +27,8 @@ const HeroByAnima = () => {
   ];
 
   return (
-    <section className="bg-dark-1 py-16 px-6 md:px-20">
-      <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-12">
+    <section className="bg-dark-1 min-h-screen flex items-center py-16 px-6 md:px-20">
+      <div className="max-w-7xl mx-auto w-full flex flex-col md:flex-row items-center justify-between gap-12">
         <div className="flex flex-col items-start gap-6 text-light-1 max-w-xl">
           <h1 className="text-4xl md:text-6xl font-bold leading-tight">
             Hi, I'm Jacobo
@@ -47,7 +47,7 @@ const HeroByAnima = () => {
           </div>
 
           <div className="flex items-center gap-2">
-            <div className="w-3 h-3 bg-emerald rounded-full"></div>
+            <div className="w-3 h-3 bg-emerald-500 rounded-full"></div>
             <span className="text-light-4">Disponible para nuevos proyectos</span>
           </div>
 
@@ -65,7 +65,7 @@ const HeroByAnima = () => {
           </div>
         </div>
 
-        <div className="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-dark-3">
+        <div className="w-64 h-64 md:w-80 md:h-80 rounded-lg overflow-hidden  border-dark-3 flex-shrink-0">
           <img
             src="/images/avatar.png"
             alt="Jacobo's profile"
