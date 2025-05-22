@@ -1,8 +1,12 @@
+'use client';
+
 import { ArrowRightIcon } from "lucide-react";
-import React from "react";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Pagination } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/pagination';
 
 export const TestimonialsByAnima = () => {
-  // Testimonial data for mapping
   const testimonials = [
     {
       id: 1,
@@ -22,12 +26,12 @@ export const TestimonialsByAnima = () => {
       name: "Nicolas Diaz",
       role: "Estudiante - Universidad Cooperativa",
     },
-    /* {
+    {
       id: 4,
-      quote: "Jacobo demuestra un compromiso admirable con cada tarea que asume. Su enfoque técnico, combinado con su disposición para aprender, lo convierten en un gran integrante para cualquier equipo de desarrollo.",
-      name: "Nicolas Diaz",
-      role: "Estudiante - Universidad Cooperativa",
-    }, */
+      quote: "Jacobo es un profesional excepcional con una gran capacidad para resolver problemas complejos. Su actitud positiva y su ética de trabajo son inspiradoras para todo el equipo.",
+      name: "Marlon Solarte",
+      role: "Ingeniero Mecánico - AUNAR",
+    },
   ];
 
   return (
@@ -49,32 +53,69 @@ export const TestimonialsByAnima = () => {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 w-full">
-          {testimonials.map((testimonial) => (
-            <div
-              key={testimonial.id}
-              className="flex flex-col min-w-[280px] h-[428px] bg-dark-3 rounded-xl overflow-hidden shadow-lg flex-1 max-w-[400px]"
-            >
-              <div className="flex flex-col items-center gap-6 p-6 md:p-12 h-full">
-                <div className="flex w-16 h-16 items-center justify-center gap-2.5 p-5 bg-dark-5 rounded-full overflow-hidden">
-                  <img className="w-10 h-10" alt="Icono de usuario" src="/icon-user.svg" />
+        <div className="w-full max-w-7xl px-4 relative">
+          <Swiper
+            modules={[Pagination]}
+            spaceBetween={30}
+            slidesPerView={1}
+            breakpoints={{
+              640: { slidesPerView: 1 },
+              768: { slidesPerView: 2 },
+              1024: { slidesPerView: 3 }
+            }}
+            pagination={{
+              clickable: true,
+              el: '.swiper-pagination',
+              type: 'bullets',
+              bulletClass: 'swiper-pagination-bullet',
+              bulletActiveClass: 'swiper-pagination-bullet-active',
+            }}
+            className="pb-16" // Aumentamos el padding para los puntos
+          >
+            {testimonials.map((testimonial) => (
+              <SwiperSlide key={testimonial.id}>
+                <div className="flex flex-col min-w-[280px] h-[428px] bg-dark-3 rounded-xl overflow-hidden shadow-lg mx-auto">
+                  <div className="flex flex-col items-center gap-6 p-6 md:p-12 h-full">
+                    <div className="flex w-16 h-16 items-center justify-center gap-2.5 p-5 bg-dark-5 rounded-full overflow-hidden">
+                      <img className="w-10 h-10" alt="Icono de usuario" src="/icon-user.svg" />
+                    </div>
+                    <p className="font-normal text-light-4 text-base text-center">
+                      "{testimonial.quote}"
+                    </p>
+                    <div className="flex flex-col items-center gap-1 mt-auto">
+                      <h3 className="font-semibold text-light-2 text-lg text-center">
+                        {testimonial.name}
+                      </h3>
+                      <p className="font-medium text-light-4 text-sm text-center">
+                        {testimonial.role}
+                      </p>
+                    </div>
+                  </div>
                 </div>
-                <p className="font-normal text-light-4 text-base text-center">
-                  "{testimonial.quote}"
-                </p>
-                <div className="flex flex-col items-center gap-1 mt-auto">
-                  <h3 className="font-semibold text-light-2 text-lg text-center">
-                    {testimonial.name}
-                  </h3>
-                  <p className="font-medium text-light-4 text-sm text-center">
-                    {testimonial.role}
-                  </p>
-                </div>
-              </div>
-            </div>
-          ))}
+              </SwiperSlide>
+            ))}
+          </Swiper>
+          
+          {/* Contenedor personalizado para la paginación */}
+          <div className="swiper-pagination !relative !bottom-0 !mt-8" />
         </div>
       </div>
+
+      {/* Estilos personalizados para los puntos del slider */}
+      <style jsx global>{`
+        .swiper-pagination-bullet {
+          width: 12px;
+          height: 12px;
+          background-color: #6B7280;
+          opacity: 1;
+          margin: 0 6px !important;
+        }
+        .swiper-pagination-bullet-active {
+          background-color: #3B82F6;
+          width: 30px;
+          border-radius: 6px;
+        }
+      `}</style>
     </section>
   );
 };
