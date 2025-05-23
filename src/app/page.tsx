@@ -4,6 +4,7 @@ import { AboutByAnima} from "./components/AboutMe"
 import {WorkByAnima } from "./components/Projects"
 import {TestimonialsByAnima} from "./components/Testimonial"
 import {HoobiesByAnima } from "./components/Hobbies"
+import { ContactMeByAnima} from "./components/Contact"
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
     <WorkByAnima/>
     <TestimonialsByAnima/>
     <HoobiesByAnima/>
+    <ContactMeByAnima/>
     </>
   );
 }
