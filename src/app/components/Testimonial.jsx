@@ -32,6 +32,24 @@ export const TestimonialsByAnima = () => {
       name: "Marlon Solarte",
       role: "Ingeniero Mecánico - AUNAR",
     },
+    {
+      id: 5,
+      quote: "Colaborar con Jacobo fue un verdadero impulso para nuestro proyecto. Su enfoque metódico y su dominio técnico marcaron una gran diferencia desde el primer día.",
+      name: "Juan David Acosta",
+      role: "Estudiante - Universidad Cooperativa",
+    },
+    {
+      id: 6,
+      quote: "Jacobo tiene una visión clara de los objetivos y una gran habilidad para traducir ideas complejas en soluciones funcionales. Es proactivo, creativo y confiable.",
+      name: "Fransico Molina",
+      role: "Estudiante - Universidad Cooperativav",
+    },
+    {
+      id: 7,
+      quote: "Lo que más destaco de Jacobo es su compromiso con la calidad. Siempre busca mejorar y optimizar cada parte del desarrollo, sin perder de vista la experiencia del usuario.",
+      name: "Sebastian Rojas",
+      role: "Estudiante - Universidad Cooperativa",
+    },
   ];
 
   return (
