@@ -24,15 +24,15 @@ import {
     const socialPlatforms = [
       {
         icon: <GithubIcon className="w-6 h-6" />,
-        url: "https://github.com/yourusername",
+        url: "https://github.com/JacoboSolarte",
       },
       {
         icon: <InstagramIcon className="w-6 h-6" />,
-        url: "https://instagram.com/yourusername",
+        url: "https://www.instagram.com/jacobo_solarte/",
       },
       {
         icon: <LinkedinIcon className="w-6 h-6" />,
-        url: "https://linkedin.com/in/yourusername",
+        url: "https://www.linkedin.com/in/jacobo-andres-solarte-otero-717126368/",
       },
     ];
   
