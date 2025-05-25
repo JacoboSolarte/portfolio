@@ -1,12 +1,11 @@
 "use client"
 
 export const HoobiesByAnima = () => {
-  // Data for hobby cards to enable mapping
   const hobbies = [
     {
       title: "Microfútbol",
       description:
-        "Me encanta jugar microfútbol, especialmente los fines de semana. No solo lo disfruto como una forma de ejercicio, sino también como una oportunidad para conocer nuevas personas y compartir con amigos. Es un espacio donde se combina la competencia y la diversión, y cada partido es una oportunidad para aprender y disfrutar de un buen rato",
+        "Me encanta jugar microfútbol, especialmente los fines de semana. No solo lo disfruto como una forma de ejercicio, sino también como una oportunidad para conocer nuevas personas y compartir con amigos. Es un espacio donde se combina la competencia y la diversión, y cada partido es una oportunidad para aprender y disfrutar de un buen rato.",
       image: "/images/micro.png",
       imageAlt: "Microfútbol",
       imageRight: true,
@@ -47,20 +46,22 @@ export const HoobiesByAnima = () => {
               <div className="flex flex-col md:flex-row items-start gap-6 md:gap-12">
                 {!hobby.imageRight && (
                   <img
-                    className={`rounded-lg w-full md:w-[249px] h-[200px] md:h-[243px] ${hobby.title === "Pasear" ? "object-cover" : ""}`}
+                    className="rounded-lg w-full md:w-[300px] h-[260px] md:h-[320px] object-cover"
                     alt={hobby.imageAlt}
                     src={hobby.image}
                   />
                 )}
 
                 <div className="flex flex-col w-full md:w-[424px] items-start gap-4">
-                  <h3 className="text-light-2 text-xl font-semibold">{hobby.title}</h3>
-                  <p className="text-light-4 text-base">{hobby.description}</p>
+                  <h3 className="text-light-2 text-2xl font-semibold">{hobby.title}</h3>
+                  <p className="text-light-4 text-lg leading-relaxed text-justify">
+                    {hobby.description}
+                  </p>
                 </div>
 
                 {hobby.imageRight && (
                   <img
-                    className={`rounded-lg w-full md:w-[269px] h-[200px] md:h-[243px] ${hobby.title === "Pasear" ? "object-cover" : ""}`}
+                    className="rounded-lg w-full md:w-[300px] h-[260px] md:h-[320px] object-cover"
                     alt={hobby.imageAlt}
                     src={hobby.image}
                   />
