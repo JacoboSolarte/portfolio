@@ -14,7 +14,7 @@ export const HoobiesByAnima = () => {
       title: "Familia",
       description:
         "La familia es un pilar fundamental en mi vida. Me encanta pasar tiempo con ellos, especialmente en vacaciones, donde aprovechamos para hacer actividades juntos, como cocinar, ver películas o simplemente compartir una buena conversación. Es en estos momentos donde más valoro las conexiones y el apoyo mutuo. Siempre me siento renovado después de un buen rato en familia.",
-      image: "/images/familia.png",
+      image: "/images/familia2.png",
       imageAlt: "Familia",
       imageRight: false,
     },

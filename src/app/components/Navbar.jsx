@@ -46,7 +46,6 @@ const HeaderByAnima = () => {
         Jacobo
       </div>
 
-      {/* Botón para dispositivos móviles */}
       <button
         onClick={() => setIsMenuOpen(!isMenuOpen)}
         className="text-light-4 md:hidden"
@@ -54,7 +53,6 @@ const HeaderByAnima = () => {
         {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
       </button>
 
-      {/* Menú de escritorio */}
       <nav className="hidden md:flex items-center gap-6">
         {navItems.map((item, index) => (
           <button
@@ -69,7 +67,7 @@ const HeaderByAnima = () => {
         <div className="w-px h-6 bg-dark-5"></div>
 
         <a
-          href="/CV-Jacobo-Solarte.pdf"
+          href="/pdf/CV-Jacobo-Solarte.pdf"
           download
           className="bg-light-2 text-dark-2 px-4 py-2 rounded-xl hover:bg-light-3 text-sm font-semibold"
         >
@@ -77,7 +75,6 @@ const HeaderByAnima = () => {
         </a>
       </nav>
 
-      {/* Menú móvil desplegable */}
       {isMenuOpen && (
         <div className="absolute top-full left-0 w-full bg-dark-1/95 backdrop-blur-sm md:hidden flex flex-col px-4 pb-4">
           {navItems.map((item, index) => (
@@ -90,7 +87,7 @@ const HeaderByAnima = () => {
             </button>
           ))}
           <a
-            href="/CV-Jacobo-Solarte.pdf"
+            href="/pdf/CV-Jacobo-Solarte.pdf"
             download
             className="mt-4 bg-light-2 text-dark-2 px-4 py-2 rounded-xl hover:bg-light-3 text-sm font-semibold text-center"
           >

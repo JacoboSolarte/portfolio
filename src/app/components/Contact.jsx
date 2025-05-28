@@ -46,7 +46,6 @@ import {
         className="flex flex-col items-center justify-center px-4 md:px-20 py-24 w-full bg-dark-2"
       >
         <div className="w-full max-w-4xl flex flex-col gap-12">
-          {/* Encabezado */}
           <div className="text-center">
             <span className="inline-block bg-dark-4 text-light-4 px-5 py-1 rounded-xl text-sm font-medium">
               Ponte en contacto
@@ -56,8 +55,7 @@ import {
               consulta o simplemente quieres conectar.
             </p>
           </div>
-  
-          {/* Información de contacto */}
+
           <div className="flex flex-col gap-4 items-center">
             {contactInfo.map((item, index) => (
               <div
@@ -79,7 +77,6 @@ import {
             ))}
           </div>
   
-          {/* Redes sociales */}
           <div className="w-full rounded-xl p-6 text-center flex flex-col items-center gap-4">
             <p className="text-light-4 text-xl">
               ¡También puedes encontrarme en estas plataformas!
