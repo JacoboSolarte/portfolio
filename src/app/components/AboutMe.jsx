@@ -28,9 +28,10 @@ export function AboutByAnima() {
           </div>
 
           <div className="w-full lg:w-1/2 space-y-6">
-            <h3 className="text-light-2 text-2xl md:text-3xl font-semibold">
+            <h2 className="text-light-2 text-2xl md:text-3xl font-semibold">
               Aquí hay un poco sobre mí
-            </h3>
+            </h2>
+
             <div className="text-base leading-7 text-light-4 space-y-4 text-justify">
               {aboutMeText.map((paragraph, index) => (
                 <p key={index}>{paragraph}</p>
